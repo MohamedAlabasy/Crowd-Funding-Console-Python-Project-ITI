@@ -2,7 +2,7 @@ import os
 
 
 def title_validation(_title):
-    if len(_title) > 3:
+    if len(_title) > 3 or not _title.isalpha():
         return True
     else:
         os.system("cls")
@@ -10,8 +10,7 @@ def title_validation(_title):
 
 
 def details_validation(_details):
-    if len(_details) > 3:
-        print("true")
+    if len(_details) > 3 or not _details.isalpha():
         return True
     else:
         os.system("cls")
@@ -20,7 +19,6 @@ def details_validation(_details):
 
 def total_target_validation(_total_target):
     if len(_total_target) > 3:
-        print("true")
         return True
     else:
         os.system("cls")
@@ -29,7 +27,6 @@ def total_target_validation(_total_target):
 
 def start_time_validation(_start_time):
     if len(_start_time) > 3:
-        print("true")
         return True
     else:
         os.system("cls")

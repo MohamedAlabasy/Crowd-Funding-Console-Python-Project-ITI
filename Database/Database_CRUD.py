@@ -103,7 +103,6 @@ def create_project(**kwargs):
 def delete_project(product_title):
     try:
         database = json.load(open(projects_database_path))
-        print(database)
         with open(projects_database_path, "w") as file:
             for index, data in enumerate(database):
                 if data["title"] == product_title:
@@ -136,7 +135,6 @@ def edit_projects(product_title, edit_words, new_data):
                     database[index][edit_words] = new_data
                     file.seek(0)
                     json.dump(database, file)
-                    print(database)
                 break
             else:
                 print("""

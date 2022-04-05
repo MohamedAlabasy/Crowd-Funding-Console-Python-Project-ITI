@@ -19,7 +19,7 @@ while not user_select:
 |               You can't enter empty data please enter only Numbers 😢                 |
 +=======================================================================================+
 """)
-    user_select = input()
+    user_select = input("Enter Your Choice : ")
 
 if user_select.isdigit() and user_select in ["1", "2", "3"]:
     os.system("cls")  # to clear the screen

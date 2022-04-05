@@ -2,7 +2,8 @@ import os
 from . import Product_Validation  # because iam run from welcome
 from Database import Database_CRUD
 import current_login_user
-# from prettytable import PrettyTable
+from datetime import date
+today = date.today()
 
 current_user = current_login_user.get_user()
 
@@ -49,7 +50,8 @@ def create_project():
             title=product_title.lower().strip(),
             details=product_details.lower().strip(),
             total_target=product_total_target.strip(),
-            start_time=product_start_time.strip(),
+            # start_time=product_start_time.strip(),
+            start_time=today.strftime("%d-%B-%Y"),
             end_time=product_end_time.strip(),
             user_id=current_user["id"],
         )
@@ -126,7 +128,11 @@ def edit_projects():
 
 
 def delete_project():
-    print("delete_project")
+    print("""
++=======================================================================================+
+|               You Have Chosen to Delete Please Enter Your Data 😁                     |
++=======================================================================================+
+    """)
     try:
         product_title = input("Enter Your product title to delete it : ")
         while not Product_Validation.title_validation(product_title):
@@ -160,15 +166,14 @@ def search_project():
 
 def all_projects():
     all_projects_data = Database_CRUD.all_projects()
-    # print(all_projects_data)
-    # print(tabulate(all_projects_data, headers=[
-    #       "ID", "Title", "Details", "Total Target", "Start Time", "End Time"]))
-    print("{:<10} {:<10} {:<10} {:<10} {:<10} {:<10}".format(
+    print("=======================================================================================================================")
+    print("| {:<5} | {:<15} | {:<20} | {:<20} | {:<20} | {:<20} |".format(
         "ID", "Title", "Details", "Total Target", "Start Time", "End Time"))
-    # for key, value in all_projects_data.items():
-    #     ID, Title, Details, Total_Target, Start_Time, End_Time = value
-    #     print("{:<10} {:<10} {:<10} {:<10} {:<10} {:<10} ".format(
-    #         ID, Title, Details, Total_Target, Start_Time, End_Time))
+    print("=======================================================================================================================")
+    for row in all_projects_data:
+        print(
+            "| {:<5} | {:<15} | {:<20} | {:<20} | {:<20} | {:<20} |".format(row["id"], row["title"], row["details"], row["total_target"], row["start_time"], row["end_time"]))
+    print("=======================================================================================================================")
     print("""
 +=======================================================================================+
 |                           Welcome to the Products Program 😎                          |
@@ -212,4 +217,4 @@ def all_projects():
 +=======================================================================================+
 |                       You Must Enter Only 1 or 2 or 3 or 4 or 5 👌                    |
 +=======================================================================================+
-""")
+        """)

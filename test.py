@@ -1,6 +1,7 @@
-from Database import Database_CRUD as databae
-from Projects import Projects_Def as product
+# from Database import Database_CRUD as databae
+# from Projects import Projects_Def as product
 import current_login_user
+# product.all_projects()
 
 # test.add_user(
 #     id=0,
@@ -9,8 +10,8 @@ import current_login_user
 #     password="123456",
 #     phone="015646212")
 
-userEmail = "   alaBAsy@Gamil.com   "
-databae.find_user(userEmail.lower().strip())
+# userEmail = "   alaBAsy@Gamil.com   "
+# databae.find_user(userEmail.lower().strip())
 # product.all_projects()
 # current_user = current_login_user.get_user()
 # print(current_user)

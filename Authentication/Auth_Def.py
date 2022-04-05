@@ -25,7 +25,11 @@ def login():
             login_password = input("Enter Your Password : ")
 
     except Exception as e:
-        print(e)
+        print(f"""
++=======================================================================================+
+|                                   Exception 😤 : {e}                                  |
++=======================================================================================+
+            """)
     else:
         Database_CRUD.find_user(login_email.lower())
         if len(current_login_user.get_user()) != 0:
@@ -85,7 +89,11 @@ def registration():
             mobile_phone = input(
                 "Invalid Phone Number Please Enter it Again : ")
     except Exception as e:
-        print(e)
+        print(f"""
++=======================================================================================+
+|                                   Exception 😤 : {e}                                  |
++=======================================================================================+
+            """)
     else:
         Database_CRUD.add_user(
             id=0,
