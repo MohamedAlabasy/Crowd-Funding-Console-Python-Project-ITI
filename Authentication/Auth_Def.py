@@ -15,7 +15,7 @@ def login():
         login_email = input("Enter Your Email  : ")
         login_password = input("Enter Your Password : ")
 
-        while not Auth_Validation.login_validation(login_email, login_password):
+        while not Auth_Validation.login_validation(login_email):
             print("""
 +=======================================================================================+
 |                   invalid Email or Password Enter it Aging 😢                         |

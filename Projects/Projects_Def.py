@@ -50,9 +50,8 @@ def create_project():
             title=product_title.lower().strip(),
             details=product_details.lower().strip(),
             total_target=product_total_target.strip(),
-            # start_time=product_start_time.strip(),
             start_time=today.strftime("%d-%B-%Y"),
-            end_time=product_end_time.strip(),
+            end_time=today.strftime("%d-%B-%Y"),
             user_id=current_user["id"],
         )
 
