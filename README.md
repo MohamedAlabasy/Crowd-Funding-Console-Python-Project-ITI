@@ -14,3 +14,8 @@
 <h3 align="center">Home Page (All Show Products)</h3>
 
 ![image](https://user-images.githubusercontent.com/93389016/161829839-a5bc68f1-5cb2-4036-9c5c-7b42eb335f0d.png)
+
+<h3 align="center">Exit Page</h3>
+
+![image](https://user-images.githubusercontent.com/93389016/161831023-646b4835-f887-4a6e-b9cc-a1d294e40e7a.png)
+
