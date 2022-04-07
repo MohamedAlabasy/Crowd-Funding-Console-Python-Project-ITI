@@ -6,7 +6,7 @@ phone_regex = r'^01[0125][0-9]{8}$'
 
 
 def name_validation(_name):
-    if len(_name) > 3 or not _name.isalpha():
+    if len(_name) > 3 and _name.isalpha():
         return True
     else:
         os.system("cls")
@@ -14,7 +14,7 @@ def name_validation(_name):
 
 
 def email_validation(_email):
-    if len(_email) > 3 or not re.fullmatch(email_regex, _email):
+    if len(_email) > 4 and re.fullmatch(email_regex, _email):
         return True
     else:
         os.system("cls")
@@ -38,7 +38,7 @@ def confirm_password_validation(_password, _confirm_password):
 
 
 def phone_validation(_phone):
-    if len(_phone) > 3 or not re.fullmatch(phone_regex, _phone):
+    if len(_phone) == 11 and re.fullmatch(phone_regex, _phone):
         return True
     else:
         os.system("cls")
@@ -46,7 +46,7 @@ def phone_validation(_phone):
 
 
 def login_validation(_email):
-    if len(_email) > 3 or not re.fullmatch(email_regex, _email):
+    if len(_email) > 3 and re.fullmatch(email_regex, _email):
         return True
     else:
         os.system("cls")
