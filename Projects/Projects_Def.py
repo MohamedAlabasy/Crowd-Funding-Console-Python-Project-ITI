@@ -2,8 +2,6 @@ import os
 from . import Product_Validation  # because iam run from welcome
 from Database import Database_CRUD
 import current_login_user
-# from datetime import date
-# today = date.today()
 
 current_user = current_login_user.get_user()
 
