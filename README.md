@@ -26,7 +26,11 @@ python index.py
 
 <h3 align="center">Home Page (All Show Products)</h3>
 
-![image](https://user-images.githubusercontent.com/93389016/161829839-a5bc68f1-5cb2-4036-9c5c-7b42eb335f0d.png)
+![Screenshot from 2022-04-07 03-43-17](https://user-images.githubusercontent.com/93389016/162103541-bb94fe8a-82a4-4020-af6d-dbce3c7a4eab.png)
+
+<h3 align="center">search for specific project/h3>  
+
+![Screenshot from 2022-04-07 03-46-21](https://user-images.githubusercontent.com/93389016/162103898-0e769887-deae-40b2-becd-f6fe0fbcf739.png)
 
 <h3 align="center">Exit Page</h3>
 
