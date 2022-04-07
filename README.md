@@ -1,4 +1,17 @@
 # Crowd-Funding-Console-App-Project-ITI
+
+### to run this project on ubuntu
+
+```
+python3 index.py
+```
+
+### to run this project on windows
+
+```
+python index.py
+```
+
 <h3 align="center">Welcome page</h3>
 
 ![image](https://user-images.githubusercontent.com/93389016/161829903-f680788a-0912-4191-ac9e-d9623a20d991.png)
@@ -18,4 +31,3 @@
 <h3 align="center">Exit Page</h3>
 
 ![image](https://user-images.githubusercontent.com/93389016/161831023-646b4835-f887-4a6e-b9cc-a1d294e40e7a.png)
-
