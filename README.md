@@ -24,11 +24,11 @@ python index.py
 
 ![image](https://user-images.githubusercontent.com/93389016/161830150-dcc8b1b5-96cb-4fd8-a1cb-6da9c598684a.png)
 
-<h3 align="center">Home Page (All Show Products)</h3>
+<h3 align="center">Home Page (All Show Products) </h3>
 
 ![Screenshot from 2022-04-07 03-43-17](https://user-images.githubusercontent.com/93389016/162103541-bb94fe8a-82a4-4020-af6d-dbce3c7a4eab.png)
 
-<h3 align="center">search for specific project/h3>  
+<h3 align="center">search for specific project </h3>  
 
 ![Screenshot from 2022-04-07 03-46-21](https://user-images.githubusercontent.com/93389016/162103898-0e769887-deae-40b2-becd-f6fe0fbcf739.png)
 
